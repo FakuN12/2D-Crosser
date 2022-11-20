@@ -5,6 +5,9 @@ using UnityEngine.EventSystems;
 
 public class BarCreator : MonoBehaviour, IPointerDownHandler
 {
+    public GameObject WoodBar;
+    public GameObject StoneBar;
+    public GameObject MetalBar;
     bool BarCreationStarted = false;
     public Bar CurrentBar;
     public GameObject BarToInstantiate;

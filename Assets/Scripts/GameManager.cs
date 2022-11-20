@@ -12,9 +12,4 @@ public class GameManager : MonoBehaviour
         Time.timeScale = 0;
     }
 
-    [ContextMenu("Test Gameplay")]
-    public void Play()
-    {
-        Time.timeScale = 1;
-    }
 }
