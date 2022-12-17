@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 412995847736239245}
   - component: {fileID: -8764658373952063939}
   - component: {fileID: -1859448809460839194}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: WoodPlank
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -57,7 +57,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 2
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 926dbbf174843364ab9d82cf3010b552, type: 2}
+  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
