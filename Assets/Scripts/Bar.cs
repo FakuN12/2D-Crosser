@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class Bar : MonoBehaviour
 {
+    public float cost = 1;
     public float maxLength = 1f;
     public Vector2 StartPosition;
     public SpriteRenderer barSpriteRenderer;
@@ -14,6 +15,7 @@ public class Bar : MonoBehaviour
     float startJointCurrentLoad = 0;
     float endJointCurrentLoad = 0;
     MaterialPropertyBlock propBlock;
+    public float actualCost;
 
     public void UpdateCreatingBar(Vector2 ToPosition)
     {
@@ -27,6 +29,8 @@ public class Bar : MonoBehaviour
         barSpriteRenderer.size = new Vector2(Length, barSpriteRenderer.size.y);
 
         boxCollider.size = barSpriteRenderer.size;
+
+        actualCost = Length * cost;
     }
 
     public void UpdateMaterial()

@@ -11,6 +11,10 @@ public class UIManager : MonoBehaviour
     public Button MetalButton;
     public BarCreator barCreator;
 
+    public Slider BudgetSlider;
+    public Text BudgetText;
+    public Gradient myGradient;
+
     private void Start()
     {
         StoneButton.onClick.Invoke();
@@ -50,5 +54,12 @@ public class UIManager : MonoBehaviour
             barCreator.BarToInstantiate = barCreator.MetalBar;
         }
 
+    }
+
+    public void UpdateBudgetUI(float CurrentBudget, float LevelBudget)
+    {
+        BudgetText.text = Mathf.FloorToInt(CurrentBudget).ToString() + "$";
+        BudgetSlider.value = CurrentBudget / LevelBudget;
+        BudgetSlider.fillRect.GetComponent<Image>().color = myGradient.Evaluate(BudgetSlider.value);
     }
 }

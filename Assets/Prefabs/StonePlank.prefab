@@ -101,12 +101,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9b8d216d3f68639468637676024470b0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxLength: 3
+  cost: 30
+  maxLength: 4
   StartPosition: {x: 0, y: 0}
   barSpriteRenderer: {fileID: 1043808924311916642}
   boxCollider: {fileID: 412995847736239245}
   StartJoint: {fileID: -8764658373952063939}
   EndJoint: {fileID: -1859448809460839194}
+  actualCost: 0
 --- !u!50 &-8101057365248651574
 Rigidbody2D:
   serializedVersion: 4
@@ -165,7 +167,7 @@ HingeJoint2D:
   serializedVersion: 4
   m_EnableCollision: 0
   m_ConnectedRigidBody: {fileID: 0}
-  m_BreakForce: 750
+  m_BreakForce: 350
   m_BreakTorque: Infinity
   m_AutoConfigureConnectedAnchor: 1
   m_Anchor: {x: 1, y: 0}
@@ -189,7 +191,7 @@ HingeJoint2D:
   serializedVersion: 4
   m_EnableCollision: 0
   m_ConnectedRigidBody: {fileID: 0}
-  m_BreakForce: 750
+  m_BreakForce: 350
   m_BreakTorque: Infinity
   m_AutoConfigureConnectedAnchor: 1
   m_Anchor: {x: 0, y: 0}

@@ -5,6 +5,7 @@ using UnityEngine.EventSystems;
 
 public class BarCreator : MonoBehaviour, IPointerDownHandler
 {
+    public GameManager myGameManager;
     public GameObject WoodBar;
     public GameObject StoneBar;
     public GameObject MetalBar;
@@ -28,7 +29,10 @@ public class BarCreator : MonoBehaviour, IPointerDownHandler
         {
             if (eventData.button == PointerEventData.InputButton.Left)
             {
-                FinishBarCreation();
+                if (myGameManager.CanPlaceItem(CurrentBar.actualCost) == true)
+                {
+                    FinishBarCreation();
+                }
             }
             else if(eventData.button == PointerEventData.InputButton.Right)
             {
@@ -77,6 +81,7 @@ public class BarCreator : MonoBehaviour, IPointerDownHandler
         CurrentBar.EndJoint.connectedBody = CurrentEndPoint.rbd;
         CurrentBar.EndJoint.anchor = CurrentBar.transform.InverseTransformPoint(CurrentEndPoint.transform.position);
 
+        myGameManager.UpdateBudget(CurrentBar.actualCost);
         StartBarCreation(CurrentEndPoint.transform.position);
     }
 
