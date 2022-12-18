@@ -357,8 +357,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: bc167cd8ab47c014798743525fe79249, type: 3}
-  m_Type: 1
+  m_Sprite: {fileID: 21300000, guid: b96fa048af1aa2a4eb3aef319d3c65ba, type: 3}
+  m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -1085,7 +1085,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.0037500004, y: 0.6434445}
   m_AnchorMax: {x: 0.27375, y: 0.739}
-  m_AnchoredPosition: {x: -0.67004395, y: -7.5}
+  m_AnchoredPosition: {x: -0.6699219, y: -7.5}
   m_SizeDelta: {x: 5.48999, y: 12.610001}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &761341098
@@ -3053,17 +3053,29 @@ PrefabInstance:
       propertyPath: m_Force.x
       value: 80
       objectReference: {fileID: 0}
+    - target: {fileID: 1407938678976762557, guid: 1c218de6f8ad0ca4ea0b94bad0e595e9, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 40ec1f1938f1022459ab052752c9a160, type: 3}
     - target: {fileID: 1407938678976762558, guid: 1c218de6f8ad0ca4ea0b94bad0e595e9, type: 3}
       propertyPath: m_RootOrder
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1407938678976762558, guid: 1c218de6f8ad0ca4ea0b94bad0e595e9, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.759915
+      objectReference: {fileID: 0}
+    - target: {fileID: 1407938678976762558, guid: 1c218de6f8ad0ca4ea0b94bad0e595e9, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.7995
+      objectReference: {fileID: 0}
+    - target: {fileID: 1407938678976762558, guid: 1c218de6f8ad0ca4ea0b94bad0e595e9, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -7.25
+      value: -7.1901
       objectReference: {fileID: 0}
     - target: {fileID: 1407938678976762558, guid: 1c218de6f8ad0ca4ea0b94bad0e595e9, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -1.75
+      value: -1.76
       objectReference: {fileID: 0}
     - target: {fileID: 1407938678976762558, guid: 1c218de6f8ad0ca4ea0b94bad0e595e9, type: 3}
       propertyPath: m_LocalPosition.z
@@ -3100,6 +3112,22 @@ PrefabInstance:
     - target: {fileID: 1407938678976762559, guid: 1c218de6f8ad0ca4ea0b94bad0e595e9, type: 3}
       propertyPath: m_Name
       value: Mobil
+      objectReference: {fileID: 0}
+    - target: {fileID: 5296431437454468683, guid: 1c218de6f8ad0ca4ea0b94bad0e595e9, type: 3}
+      propertyPath: m_Size.x
+      value: 4.1039
+      objectReference: {fileID: 0}
+    - target: {fileID: 5296431437454468683, guid: 1c218de6f8ad0ca4ea0b94bad0e595e9, type: 3}
+      propertyPath: m_Size.y
+      value: 1.509854
+      objectReference: {fileID: 0}
+    - target: {fileID: 5296431437454468683, guid: 1c218de6f8ad0ca4ea0b94bad0e595e9, type: 3}
+      propertyPath: m_Offset.x
+      value: 0.015769692
+      objectReference: {fileID: 0}
+    - target: {fileID: 5296431437454468683, guid: 1c218de6f8ad0ca4ea0b94bad0e595e9, type: 3}
+      propertyPath: m_Offset.y
+      value: -0.10492381
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1c218de6f8ad0ca4ea0b94bad0e595e9, type: 3}
