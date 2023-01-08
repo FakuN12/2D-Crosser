@@ -11,7 +11,6 @@ public class FinishLevel : MonoBehaviour
         {
             FindObjectOfType<GameManager>().FinishGame();
         }
-            Debug.Log("Finish!");
     }
 
 }
